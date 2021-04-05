@@ -151,8 +151,8 @@ export default function Page({props}) {
       }
       return array;
     }
-
-    
+ 
+ 
     function StaffList(props) {
 
       const allstaff = shuffleArray(props.allstaff);
@@ -203,7 +203,7 @@ export default function Page({props}) {
                             <div className="keystaff" data-aos="fade-in" data-aos-duration="1500">
                                 <div className="row">
                                      <StaffList allstaff={allstaff} />
-                                </div>
+                                 </div>
                             </div>
 
                              
