@@ -14,14 +14,14 @@ const Contact = ({props}) => {
   let { t } = useTranslation()
   let router = useRouter();
 
-	return (
-  	<Layout>
-    		<Head>
+  return (
+    <Layout>
+        <Head>
             <title>{t('common:contact')} | {t('common:meta-title')}</title>
             <meta name="description" content={t('common:meta-description')} />
         </Head>
 
-  	    <section className="section-padding sub-page mt-5">
+        <section className="section-padding sub-page mt-5">
               <div className="container">
                   <div className="row justify-content-center">
                       <div className="col-lg-12">
@@ -83,14 +83,14 @@ const Contact = ({props}) => {
                                 <span className="contact-info__icon color-orange"><i className="fad fa-at"></i></span>
                                 <div className="media-body">
                                   <h3 className="color-orange">{t('common:email-us')}</h3>
-                                  <p><a href="mailto:info@garderiebimbo.ca" className="color-orange">info@garderiebimbo.ca</a></p>
+                                  <p><a href="mailto:info@bimbodaycare.ca" className="color-orange">info@bimbodaycare.ca</a></p>
                                 </div>
                               </div>
                               <div className="media contact-info">
                                 <span className="contact-info__icon color-green"><i className="fad fa-phone"></i></span>
                                 <div className="media-body">
-                                  <h3 className="color-green">Phone / Fax</h3>
-                                  <p><b>Phone:</b> 506-548-8069 <br/> <b>Fax:</b> 506-548-8069</p>
+                                  <h3 className="color-green">{t('common:phone-fax')}</h3>
+                                  <p><b>{t('common:phone')}:</b> 506-548-8069 <br/> <b>{t('common:fax')}:</b> 506-548-8069</p>
                                 </div>
                               </div>
 
@@ -144,10 +144,10 @@ const Contact = ({props}) => {
               </div>
           </section>
 
-  	    <Services />
+        <Services />
 
-  	    </ Layout>
-  	)
+        </ Layout>
+    )
 }
 
 

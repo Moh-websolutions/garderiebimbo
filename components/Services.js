@@ -8,7 +8,7 @@ const services = [
   {
     id: "1",    
     title: "Spacious classrooms for all age groups ",
-    titlefr: "Salles de classe spacieuse pour chaque group d’âge ",
+    titlefr: "Salles de classe spacieuses pour chaque group d’âge ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/camera-big.png",
@@ -30,7 +30,7 @@ const services = [
     {
     id: "3",    
     title: "Indoor and outdoor playgrounds",
-    titlefr: "Parc intérieurs et extérieures ",
+    titlefr: "Parc intérieurs et extérieurs ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/education-big.png",
@@ -52,7 +52,7 @@ const services = [
     {
     id: "5",    
     title: "All food is prepared onsite from a well-balanced menu ",
-    titlefr: "Tous les repas sont préparés sur place a partir d’un menu équilibre ",
+    titlefr: "Tous les repas sont préparés sur place à partir d’un menu équilibré ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/apple.png",
@@ -74,7 +74,7 @@ const services = [
     {
     id: "7",    
     title: "Located at the college",
-    titlefr: "Situe au Collège",
+    titlefr: "Situé au Collège",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/college.png",
@@ -106,7 +106,10 @@ function ServicesList(props) {
   
     <div className="quality__col" key={item.id}>
         <div className="quality__item" data-aos="zoom-in-right" data-aos-easing="ease-in-sine">
-          <div className="quality__icon"><div  className="quality__pic"><Image src={item.image} width={item.width} height={item.height} alt={item.title} /></div></div>
+          <div className="quality__icon">
+          <div  className="quality__pic">
+          <Image src={item.image} width={item.width} height={item.height} alt={item.title} /></div>
+          </div>
           <div className="quality__details">
             <div className="quality__category">{router.locale === "fr" ? item.titlefr  : item.title  }</div>
             <div className="quality__text">{item.description}</div>
@@ -124,10 +127,10 @@ const Services = () => {
 
     let { t } = useTranslation()
     let router = useRouter();
-	
+    
     return (
 
-		<section>
+        <section>
       <div className="col-md-12-">
 
         <div className="quality">
@@ -149,7 +152,7 @@ const Services = () => {
         </div>
       </div>
   </section>
-	)
+    )
 }
 
 

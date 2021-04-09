@@ -28,6 +28,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/contact.js"
+    ],
+    "/gallery": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/gallery.js"
     ]
   },
   "ampFirstPages": []

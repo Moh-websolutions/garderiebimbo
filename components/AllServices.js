@@ -5,10 +5,10 @@ import { useRouter} from 'next/router';
 
 
 const services = [
-  {
+    {
     id: "1",    
     title: "Spacious classrooms for all age groups ",
-    titlefr: "Salles de classe spacieuse pour chaque group d’âge ",
+    titlefr: "Salles de classe spacieuses pour chaque group d’âge ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/camera-big.png",
@@ -30,7 +30,7 @@ const services = [
     {
     id: "3",    
     title: "Indoor and outdoor playgrounds",
-    titlefr: "Parc intérieurs et extérieures ",
+    titlefr: "Parc intérieurs et extérieurs ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/education-big.png",
@@ -52,7 +52,7 @@ const services = [
     {
     id: "5",    
     title: "All food is prepared onsite from a well-balanced menu ",
-    titlefr: "Tous les repas sont préparés sur place a partir d’un menu équilibre ",
+    titlefr: "Tous les repas sont préparés sur place à partir d’un menu équilibré ",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/apple.png",
@@ -74,7 +74,7 @@ const services = [
     {
     id: "7",    
     title: "Located at the college",
-    titlefr: "Situe au Collège",
+    titlefr: "Situé au Collège",
     description:"",
     descriptionfr:"",
     image:"/assets/img/hero/college.png",
@@ -120,7 +120,7 @@ function ServicesList(props) {
   );
 }
 const allServices = () => {
-	return (
+    return (
 
     <div className="mt-5">
         <div className="quality">
@@ -135,7 +135,7 @@ const allServices = () => {
           </div>
       </div>
     </div> 
-	)
+    )
 }
 
 
